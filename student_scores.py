@@ -28,7 +28,7 @@ for i in range(len(data)) :
 
 for i in range(len(data)):
     for j in range(len(data[i])) :
-        names.append(data[i][j-1]) if isinstance(data[i][j], Number) and data[i][j] == sls else 1
+        names.append(data[i][j-1]) if isinstance(data[i][j], Number) and data[i][j] == sls else data[i][j]
         names.sort()
 
 for x in names:
